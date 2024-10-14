@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Contact Form Filler",
+  "version": "1.0",
+  "description": "Fill contact forms with demo data",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.ts"]
+    }
+  ]
+}
